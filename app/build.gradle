@@ -13,6 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -39,5 +40,7 @@ dependencies {
     //firebase
     implementation 'com.google.firebase:firebase-inappmessaging-display:17.0.5'
     implementation 'com.google.firebase:firebase-core:16.0.6'
+
+    implementation 'androidx.multidex:multidex:2.0.0'
 }
 apply plugin: 'com.google.gms.google-services'
